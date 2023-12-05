@@ -1,0 +1,124 @@
+body{
+
+  background-color: #f0f0f8;
+  direction: rtl;
+  overflow-x: hidden;
+  
+}
+
+.portfolio-page {
+
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  gap: 3rem;
+  
+  margin-top: 100px;
+  
+  margin-bottom: 40px;
+  }
+  
+  .portfolio-page .content {
+  border-radius: 0.8rem;
+    transition: all 0.3s;
+    box-shadow: rgba(30, 34, 40, .02) 0 2px 1px, rgba(30, 34, 40, .02) 0 4px 2px, rgba(30, 34, 40, .02) 0 8px 4px, rgba(30, 34, 40, .02) 0 16px 8px, rgba(30, 34, 40, .03) 0 32px 16px !important;
+  }
+  
+  .protflui-page .link-image {
+  
+    height: 514px;
+  
+    display: block;
+  }
+  
+  .portfolio-page  .image {
+  
+    border-radius: 0.8rem !important;
+  
+    width: 100%;
+  
+    height: 100%;
+    box-shadow: rgba(30,34,40,.02) 0 2px 1px,rgba(30,34,40,.02) 0 4px 2px,rgba(30,34,40,.02) 0 8px 4px,rgba(30,34,40,.02) 0 16px 8px,rgba(30,34,40,.03) 0 32px 16px!important;
+  }
+  
+  .portfolio-page .content:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 0.25rem 1.25rem rgba(52, 63, 82, .1);
+  }
+  
+  .mySwiper .swiper-wrapper .swiper-slide {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+ 
+  }
+  .main .swiper-direction{
+    /* overflow: visible; */
+    margin-top: 40px;
+  }
+  .swiper-direction .swiper-wrapper {
+  transition: linear;
+
+  }
+   .swiper-direction img{
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: rgba(30, 34, 40, .02) 0 2px 1px, rgba(30, 34, 40, .02) 0 4px 2px, rgba(30, 34, 40, .02) 0 8px 4px, rgba(30, 34, 40, .02) 0 16px 8px, rgba(30, 34, 40, .03) 0 32px 16px !important;
+  
+  }
+  .portfolio-title h2{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    
+    font-family:"Space Grotesk", sans-serif;
+    
+  }
+  .portfolio-title h2 a{
+    text-decoration: none;
+    color: #343f52;
+  }
+  .portfolio-title h2 a:hover{
+    color: #605dba;
+  }
+  /***** syntax responsive *****/
+  @media screen and (max-width: 992px) {
+    .portfolio-page{
+      grid-template-columns: 1fr 1fr;
+    }
+    .container{
+      max-width: 100%;
+  }
+
+  }
+  
+   @media screen and (max-width: 768px) {
+
+   }
+    
+  @media screen and (max-width: 576px) {
+    .portfolio-page{
+      
+      gap: 2rem;
+    }}
+  
+  
+  
+  @media screen and (max-width: 450px) {
+    .portfolio-page{
+      grid-template-columns:  1fr;
+
+    }
+    .portfolio-main{
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+   
+    .portfolio-main{
+      padding: 0px;
+    }
+  }
+  
